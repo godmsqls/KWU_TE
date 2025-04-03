@@ -1,0 +1,81 @@
+/* 전체 컨테이너 */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 251, 238);
+}
+
+/* 관리자 로그인 버튼 */
+.loginWrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+.login {
+  background-color: #a71919;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #a03030;
+}
+
+/* 검색창 */
+.searchWrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  width: 500px;
+}
+
+.searchIcon {
+  color: #a71919;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background-color: rgb(255, 251, 238);
+  font-size: 18px;
+  width: 100%;
+}
+
+/* 버튼 스타일 */
+.btWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 60px;
+}
+
+.button {
+  background-color: #a71919;
+  color: white;
+  font-size: 25px;
+  padding: 50px 50px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ad2c2c;
+}
