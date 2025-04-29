@@ -3,12 +3,16 @@
 //import viteLogo from '/vite.svg'
 import './addPage.css'
 import Input from '../components/addPage_input'
-function Addpage() {
+import { useNavigate } from 'react-router-dom';
+
+function AddPage() {
+  const navigate = useNavigate();
+
   return (
     <>
     <div className='container'>
       <div className='back'>
-        <button className='back-button'>←</button>
+        <button className='back-button' onClick={()=>navigate('/')}>←</button>
       </div>
       <h2 className='title'>제휴 업체 추가 등록</h2>
       <div className='blank'></div>
@@ -27,4 +31,4 @@ function Addpage() {
   )
 }
 
-export default Addpage
+export default AddPage
