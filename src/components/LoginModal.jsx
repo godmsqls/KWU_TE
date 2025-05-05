@@ -14,7 +14,6 @@ export default function LoginModal({onClose}){
                 <h2>로그인</h2>
                 <div className="login_option_inmodal">
                     <select className="login_select_inmodal" title="소속을 선택하세요" onChange={handleChangeSelect}>
-                        <option value="">소속을 선택해주세요</option>
                         <option value="1">인공지능융합대학</option>
                         <option value="2">총학생회</option>
                     </select><br></br>
