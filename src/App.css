@@ -106,13 +106,21 @@
   height: 40px;
   width: 270px;
   padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 5px;
   box-sizing: border-box;
+}
+
+.dropdown{
+  color: #a03030;
 }
 
 .login_pw_inmodal{
   height: 40px;
   width: 270px;
   padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 5px;
   box-sizing: border-box; /*padding+border 크기를 height 안에 포함, 안하면 삐져나감*/
 }
 
