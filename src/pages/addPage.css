@@ -1,5 +1,6 @@
 /* 전체배경 */
 
+<<<<<<< HEAD
 #root {
   max-width: 2000px;
   width: 100%;
@@ -78,3 +79,81 @@
 .blank{
   padding: 30px;
 }
+=======
+  #root {
+    max-width: 2000px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /*여기부터 부분코드*/
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .text-box{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #899396aa;
+    padding-left: 15x;
+  }
+  
+  .label-name{
+    flex: 0 0 20%;
+    background-color: #FFF0F0;
+    border-radius: 7px;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .add{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 200px;
+  }
+  
+  .add-button{
+    background-color: #A71919;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .back{
+    display: flex;
+    width: 100%;
+  }
+  
+  .back-button{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .input-row {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .title{
+    border-bottom: 3px solid #A71919;
+    width: 250px;
+    margin:100px;
+  }
+  
+  .blank{
+    padding: 30px;
+  }
+>>>>>>> e630f48 (login modal)

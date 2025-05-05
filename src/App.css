@@ -79,3 +79,75 @@
 .button:hover {
   background-color: #ad2c2c;
 }
+<<<<<<< HEAD
+=======
+
+/*로그인 모달창*/
+.LoginModal{
+  position: fixed;  /*모달이 화면 가운데로 오게함*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/*모달 안의 옵션*/
+.login_option_inmodal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.login_select_inmodal{
+  height: 40px;
+  width: 270px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.login_pw_inmodal{
+  height: 40px;
+  width: 270px;
+  padding: 0 10px;
+  box-sizing: border-box; /*padding+border 크기를 height 안에 포함, 안하면 삐져나감*/
+}
+
+/*모달 안의 로그인 버튼*/
+.login_button_inmodal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 30px;
+  text-align:center;
+  background-color: #ad2c2c;
+  color: white;
+}
+
+.login_button_wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+/*모달 안의 X버튼을 담은 컨테이너*/
+.X_container{
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  
+}
+
+/*모달 안의 X버튼*/
+.X_inmodal{
+  background-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin: -30px;
+}
+>>>>>>> e630f48 (login modal)
