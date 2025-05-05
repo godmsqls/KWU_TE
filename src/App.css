@@ -79,8 +79,6 @@
 .button:hover {
   background-color: #ad2c2c;
 }
-<<<<<<< HEAD
-=======
 
 /*로그인 모달창*/
 .LoginModal{
@@ -150,4 +148,3 @@
   font-size: 25px;
   margin: -30px;
 }
->>>>>>> e630f48 (login modal)
