@@ -1,0 +1,72 @@
+/* 전체 컨테이너 */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 238);
+  }
+  
+  /* 상단 헤더 */
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    z-index: 10; /* 다른 요소보다 위에 위치하게 */
+  }
+  
+  .school {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .back {
+    font-size: 34px;
+    cursor: pointer;
+  }
+  
+  /* 제목 (중앙 + 밑줄) */
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 80px;
+    border-bottom: 2px solid #a71919;
+    padding-bottom: 5px;
+    width: 100px;
+    /*width: fit-content;  ==> 글자 길이에 맞게*/
+  }
+  
+  /* 제휴 정보 박스 */
+  .infoBox {
+    background-color: #a71919;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 14px;
+    width: 50%;
+    min-height: 200px;
+    line-height: 1.5;
+    margin-bottom: 70px;
+  }
+  
+  /* 주소,시간 박스 */
+  .normalBox {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    min-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
