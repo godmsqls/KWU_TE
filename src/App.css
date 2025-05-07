@@ -23,7 +23,7 @@
   border: none;
   padding: 8px 15px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -45,13 +45,16 @@
 
 .searchIcon {
   color: #a71919;
+  width: 25px; height: 25px;
 }
 
 .searchInput {
   border: none;
   outline: none;
   background-color: rgb(255, 251, 238);
-  font-size: 18px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -73,7 +76,7 @@
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -152,7 +155,7 @@
 /*모달 안의 X버튼*/
 .X_inmodal{
   background-color: white;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 25px;
   margin: -30px;
 }

@@ -22,7 +22,7 @@
   }
   
   .school {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 30px;
   }
   
@@ -34,7 +34,7 @@
   /* 제목 (중앙 + 밑줄) */
   .detail_title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 100px;
     border-bottom: 2px solid #a71919;
@@ -66,7 +66,7 @@
     width: 50%;
     min-height: 30px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     margin-bottom: 30px;
   }
