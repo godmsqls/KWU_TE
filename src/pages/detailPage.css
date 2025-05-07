@@ -32,7 +32,7 @@
   }
   
   /* 제목 (중앙 + 밑줄) */
-  .title {
+  .detail_title {
     text-align: center;
     font-weight: bold;
     font-size: 20px;

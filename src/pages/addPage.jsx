@@ -11,7 +11,7 @@ function Addpage() {
       <div className='back'>
         <button className='back-button'>←</button>
       </div>
-      <h2 className='title'>제휴 업체 추가 등록</h2>
+      <h2 className='add_title'>제휴 업체 추가 등록</h2>
       <Input label='카테고리' placeholder=''></Input>
       <Input label='제휴사 명' placeholder=''></Input>
       <Input label='제휴 내용' placeholder=''></Input>

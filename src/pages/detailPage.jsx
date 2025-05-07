@@ -10,7 +10,7 @@ function DetailPage(){
             </div>
   
             {/* 제목 */}
-            <h2 className="title"></h2>
+            <h2 className="detail_title"></h2>
   
             {/* 제휴정보, 주소, 시간 박스 */}
             <div className="infoBox"></div>

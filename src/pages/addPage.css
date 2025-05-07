@@ -1,10 +1,4 @@
-/* 전체배경 */
-  #root {
-    max-width: 2000px;
-    width: 100%;
-    text-align: center;
-  }
-  
+
   /*여기부터 부분코드*/
   
   .container{
@@ -66,9 +60,8 @@
     justify-content: center;
   }
   
-  .title{
+  .add_title{
     border-bottom: 3px solid #A71919;
-    width: 250px;
     margin:100px;
   }
   
