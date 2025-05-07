@@ -1,3 +1,5 @@
+import { VscChromeClose } from "react-icons/vsc";
+
 export default function LoginModal({onClose}){
 
     function handleChangeSelect(e){
@@ -8,10 +10,12 @@ export default function LoginModal({onClose}){
         <div className="LoginModal" onClick={onClose}>
             <div onClick={(e)=>e.stopPropagation()}>
                 <div className="X_container">
-                    <button  className="X_inmodal" onClick={onClose}>X</button>
+                    <button  className="X_inmodal" onClick={onClose}>
+                        <VscChromeClose />
+                    </button>
                 </div>
             
-                <h2>로그인</h2>
+                <div className="login_text">로그인</div>
                 <div className="login_option_inmodal">
                     <select className="login_select_inmodal" title="소속을 선택하세요" onChange={handleChangeSelect}>
                         <option value="">소속을 선택하세요</option>

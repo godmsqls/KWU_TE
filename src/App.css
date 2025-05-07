@@ -90,17 +90,28 @@
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: white;
+  z-index: 998;
   display: flex;
   flex-direction: column;
   padding: 30px;
   width: 100%;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 /*모달 안의 옵션*/
 .login_option_inmodal{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.login_text{
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   padding-bottom: 20px;
 }
@@ -158,4 +169,12 @@
   font-weight: 600;
   font-size: 25px;
   margin: -30px;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
 }

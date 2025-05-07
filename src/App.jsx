@@ -18,7 +18,12 @@ function App() {
       {/* 관리자 로그인 버튼 */}
       <div className="loginWrap">
         <button className="login" onClick={()=>setIsOpen(true)}>관리자 로그인</button>
-        {isOpen&&<LoginModal onClose={()=>setIsOpen(false)}/>}
+        {isOpen&& (
+          <>
+            <div className="overlay" onClick={() => setIsOpen(false)}></div>
+            <LoginModal onClose={() => setIsOpen(false)} />
+          </>
+        )}
       </div>
 
       {/* 검색창 */}
