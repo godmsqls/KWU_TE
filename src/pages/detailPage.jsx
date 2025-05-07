@@ -1,8 +1,12 @@
 import './detailPage.css'
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import ReviewModal from '../components/ReviewModal';
 
 function DetailPage(){
     const navigate = useNavigate();
+    const[isOpen,setIsOpen]=useState(false);
+
     return (
         <div className="container">
             {/* 상단 헤더 */}
@@ -16,7 +20,13 @@ function DetailPage(){
             
             <div className="review_header">
                 <div className="stars">⭐⭐⭐⭐☆</div>
-                <button className="add_review_btn">리뷰 추가</button>
+                <button className="add_review_btn" onClick={()=>setIsOpen(true)}>리뷰 추가</button>
+                {isOpen&& (
+                    <>
+                        <div className="overlay" onClick={() => setIsOpen(false)}></div>
+                        <ReviewModal onClose={() => setIsOpen(false)} />
+                    </>
+                )}
             </div>
             <div className='box_wrap'>
                 <div className='detail_box'>

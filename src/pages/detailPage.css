@@ -108,6 +108,30 @@
     margin-left: 20%;
   }
 
+  .ReviewModal{
+    position: fixed;  /*모달이 화면 가운데로 오게함*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  .review_text{
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
   .review_item {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
