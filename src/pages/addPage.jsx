@@ -33,7 +33,6 @@ function Addpage() {
       <Input label='제휴사 명'></Input>
       <Input label='제휴 내용'></Input>
       <Input label='위치'></Input>
-      <Input label='영업 시간'></Input>
       <div className='blank'></div>
 
       <div className='add'>
