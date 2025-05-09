@@ -11,7 +11,7 @@ export default function ReviewModal({onClose}){
                 </div>
             </div>
 
-            <div>제휴 업체 리뷰</div>
+            <div className="review_text">제휴 업체 리뷰</div>
         </div>
     );
 }

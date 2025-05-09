@@ -14,7 +14,8 @@ function App() {
   
   return (
     <div>
-      <div className="container">
+      <div className="container app_background">
+      
       {/* 관리자 로그인 버튼 */}
       <div className="loginWrap">
         <button className="login" onClick={()=>setIsOpen(true)}>관리자 로그인</button>
@@ -36,6 +37,8 @@ function App() {
       <div className="btWrap">
         <button className="button" onClick={()=>navigate('/addPage')}>인공지능융합대학</button>
         <button className="button" onClick={()=>navigate('/detailPage')}>총학생회</button>
+        <button className="button" onClick={()=>navigate('/')}>제휴사 추천</button>
+        <button className="button" onClick={()=>navigate('/')}>추천 업체 확인</button>
       </div>
 
       </div>
