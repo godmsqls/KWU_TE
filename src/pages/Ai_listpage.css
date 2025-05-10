@@ -1,0 +1,67 @@
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 3rem;
+  background-color: rgb(255, 251, 238);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.category-block {
+  width: 500px;
+  text-align: center;
+  position: relative;
+  padding: 0 6rem;
+  border-left: 1px solid #ccc;
+}
+
+.category-block:first-child {
+  border-left: none;
+}
+
+.category-block:nth-child(2) {
+  border-left: none;
+}
+
+.category-title {
+  background-color: #a71919;
+  color: white;
+  padding: 0.6rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.8rem;
+  border-radius: 6px;
+}
+
+.store-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 30px;
+  justify-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.store-list li {
+  font-size: 1.1rem;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #bbb;
+  width: 180px;
+  text-align: center;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 9999;        /*버튼이 다른 요소 위로 올라오게 */  
+  pointer-events: auto;   
+}
