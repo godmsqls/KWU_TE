@@ -7,7 +7,7 @@ function Ai_listpage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/partners")
+    fetch("http://192.168.0.36:5000/partners")
       .then(res => res.json())
       .then(data => setPartners(data));
   }, []);

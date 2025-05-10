@@ -10,7 +10,7 @@ function DetailPage() {
   const [store, setStore] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/partners")
+    fetch("http://192.168.0.36:5000/partners")
       .then(res => res.json())
       .then(data => {
         const found = data.find(item => item.store_name === storeName);
