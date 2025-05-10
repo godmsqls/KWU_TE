@@ -56,6 +56,7 @@
   width: 50%;
   }  
 
+
 /* 제휴 정보 박스 */
 .infoBox {
   background-color: #a71919;
@@ -70,6 +71,8 @@
   line-height: 1.8;
   margin-bottom: 70px;
 }
+
+
   
   /* 주소 박스 */
   .normalBox {

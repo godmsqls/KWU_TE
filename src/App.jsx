@@ -41,6 +41,7 @@ function App() {
           <button className="button" onClick={() => navigate('/')}>추천 업체 확인</button>
         </div>
 
+
       </div>
     </div>
   );

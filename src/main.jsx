@@ -11,6 +11,7 @@ import Ai_listpage from './pages/Ai_listpage.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
+
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
