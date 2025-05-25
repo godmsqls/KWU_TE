@@ -1,0 +1,20 @@
+.partnerList {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.partnerItem {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.partnerItem:hover {
+  background-color: #f7e9e9;
+}
+
+.category {
+  color: gray;
+  font-size: 0.9rem;
+}
