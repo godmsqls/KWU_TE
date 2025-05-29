@@ -2,27 +2,35 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  gap: 100px;
-  padding: 50px;
+  justify-content: space-between;
+  padding: 50px 80px;
   background-color: rgb(255, 251, 238);
   font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
 }
 
 .category-block {
-  width: 500px;
+  flex: 1;
   text-align: center;
+  padding: 0 20px;
   position: relative;
-  padding-left: 30px;
-  border-left: 1px solid #ccc;
 }
 
-.category-block:first-child {
-  border-left: none;
+/* 세로줄: 가운데 줄 */
+.category-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
 }
 
-.category-block:nth-child(2) {
-  border-left: none;
+/* 음식점 왼쪽 줄 제거 */
+.category-block:first-of-type::before {
+  display: none;
 }
 
 .category-title {
@@ -33,6 +41,10 @@
   font-weight: bold;
   margin-bottom: 1.8rem;
   border-radius: 6px;
+
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .store-list {
@@ -56,13 +68,13 @@
 
 .back-button {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 20px;
+  left: 20px;
   font-size: 2rem;
   background: none;
   border: none;
   color: #000;
   cursor: pointer;
-  z-index: 9999;        /*버튼이 다른 요소 위로 올라오게 */  
-  pointer-events: auto;   
+  z-index: 9999;
+  pointer-events: auto;
 }
