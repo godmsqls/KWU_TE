@@ -1,0 +1,201 @@
+/* 전체 컨테이너 */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 251, 238);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.app_background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/광운대학교_캠퍼스.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+/* 관리자 로그인 버튼 */
+.loginWrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+.login {
+  background-color: #a71919;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #a03030;
+}
+
+/* 검색창 */
+.searchWrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  width: 500px;
+}
+
+.searchIcon {
+  color: #a71919;
+  width: 25px; height: 25px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* 버튼 스타일 */
+.btWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 60px;
+}
+
+.button {
+  background-color: #a71919;
+  color: white;
+  font-size: 25px;
+  padding: 50px 50px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  opacity: 0.7;
+  width: 285px;height: 330px;
+}
+
+.button:hover {
+  background-color: #ad2c2c;
+  opacity: 0.9;
+}
+
+/*로그인 모달창*/
+.LoginModal{
+  position: fixed;  /*모달이 화면 가운데로 오게함*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/*모달 안의 옵션*/
+.login_option_inmodal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.login_text{
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.login_select_inmodal{
+  height: 40px;
+  width: 270px;
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.dropdown{
+  color: #a03030;
+}
+
+.login_pw_inmodal{
+  height: 40px;
+  width: 270px;
+  padding: 0 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box; /*padding+border 크기를 height 안에 포함, 안하면 삐져나감*/
+}
+
+/*모달 안의 로그인 버튼*/
+.login_button_inmodal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 30px;
+  text-align:center;
+  background-color: #ad2c2c;
+  color: white;
+}
+
+.login_button_wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+/*모달 안의 X버튼을 담은 컨테이너*/
+.X_container{
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  
+}
+
+/*모달 안의 X버튼*/
+.X_inmodal{
+  background-color: white;
+  font-weight: 600;
+  font-size: 25px;
+  margin: -30px;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+}

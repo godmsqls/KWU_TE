@@ -1,0 +1,218 @@
+/* 전체 컨테이너 */
+.container {
+    width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    background-color: rgb(255, 251, 238);
+  }
+  
+  /* 상단 헤더 */
+  .header_wrap {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    z-index: 10; /* 다른 요소보다 위에 위치하게 */
+  }
+
+  .school {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  .back {
+    font-size: 34px;
+    cursor: pointer;
+  }
+
+  .box_wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  
+  /* 제목 (중앙 + 밑줄) */
+  .detail_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 70px;
+    border-bottom: 2px solid #a71919;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    width: fit-content;
+    /*width: fit-content;  ==> 글자 길이에 맞게*/
+  }
+
+ .detail_box{
+  margin-left: 120px;
+  width: 50%;
+  }  
+
+
+/* 제휴 정보 박스 */
+.infoBox {
+  background-color: #a71919;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.9rem;       /* 글씨 더 크게 */
+  font-weight: 700;        /* 글씨 굵게 (bold) */
+  width: 80%;
+  min-height: 200px;
+  line-height: 1.8;
+  margin-bottom: 70px;
+}
+
+
+  
+  /* 주소 박스 */
+  .normalBox {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    min-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  
+  /*리뷰 모달 창창*/
+  .review_box{
+    width: 50%;
+  }
+
+  .review_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .add_review_btn{
+    background-color: #a71919;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 170px; height: 45px;
+    margin-right: 30px;
+    margin-left: 20%;
+  }
+/*
+  .ReviewModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+*/
+
+  .ReviewModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+  }
+
+  .review_text{
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .rating_wrap_inmodal ,.rating_content_wrap_inmodal{
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .rating_label{
+    flex: 0 0 20%;
+    background-color: #FFF0F0;
+    border-radius: 7px;
+    padding: 12px;
+    width: 290px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .review_content_label{
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF0F0;
+    border-radius: 7px;
+    padding: 12px;
+    width: 290px; height: 180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .review_content{
+    margin-left: 30px;
+    width: 800px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: large;
+    padding-left: 20px;
+  }
+
+  .add_review_btn_inmodal{
+    background-color: #a71919;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 170px; height: 45px;
+    margin-top: 30px;
+    margin-left: 630px;
+  }
+  /*리뷰 창*/
+  .review_item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-right: 30px;
+    height: 100px;
+  }
+
+  .stars{
+    font-size: x-large;
+  }

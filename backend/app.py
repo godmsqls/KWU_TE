@@ -1,0 +1,46 @@
+from flask import Flask, jsonify
+import mysql.connector
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+# 매 요청마다 MySQL 새 연결 생성
+def get_connection():
+    return mysql.connector.connect(
+        host="172.100.6.88",
+        user="KWU_TE",
+        password="ilovekwu",
+        database="AI_alliance"
+    )
+
+def get_chong_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="KWU_TE",
+        password="ilovekwu",
+        database="allianceDB"
+    )
+
+@app.route("/partners")
+def get_partners():
+    db = get_connection()
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT category, store_name, benefit, location FROM Partners")
+    rows = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return jsonify(rows)
+
+@app.route("/chong_partners")
+def get_chong_partners():
+    db = get_chong_connection()
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT store_name, benefit, location, category FROM allianceTable")
+    rows = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return jsonify(rows)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000, debug=True)
