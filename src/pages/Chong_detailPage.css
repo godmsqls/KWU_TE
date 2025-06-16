@@ -64,8 +64,8 @@
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-  font-size: 1.9rem;       /* 글씨 더 크게 */
-  font-weight: 700;        /* 글씨 굵게 (bold) */
+  font-size: 1.5rem;       /* 글씨 더 크게 */
+  font-weight: 600;        /* 글씨 굵게 (bold) */
   width: 80%;
   min-height: 200px;
   line-height: 1.8;

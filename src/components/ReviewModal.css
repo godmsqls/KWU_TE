@@ -1,0 +1,22 @@
+.stars {
+  display: flex;
+  font-size: 25px;
+}
+
+.star {
+  cursor: pointer;
+  color: lightgray;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: gold;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
