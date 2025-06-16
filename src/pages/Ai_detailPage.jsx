@@ -12,7 +12,7 @@ function Ai_detailPage() {
 
   const fetchStoreData = async () => {
     try {
-      const response = await fetch("http://192.168.35.201:5000/partners");
+      const response = await fetch("http://192.168.35.201:5000/ai_partners");
       const data = await response.json();
       const found = data.find(item => item.store_name === storeName);
       setStore(found);

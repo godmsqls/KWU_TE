@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import LoginModal from './components/LoginModal';
 import RecommendModal from './components/recommendModal';
 import Recommended_ListPage from './components/Recommended_listpage';
+import SearchComponent from './components/SearchComponent';
 import { useState } from 'react';
 
 function App() {
@@ -38,8 +39,7 @@ function App() {
 
         {/* 검색창 */}
         <div className="searchWrap">
-          <FaSearch className="searchIcon" />
-          <input type="text" placeholder="검색어를 입력하세요" className="searchInput" />
+          <SearchComponent/>
         </div>
 
         {/* 버튼 섹션 */}

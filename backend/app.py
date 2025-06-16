@@ -23,7 +23,7 @@ def get_chong_connection():
         database="allianceDB"
     )
 
-@app.route("/partners")
+@app.route("/ai_partners")
 def get_partners():
     db = get_connection()
     cursor = db.cursor(dictionary=True)
@@ -166,6 +166,33 @@ def get_chong_reviews(store_name):
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.route("/add_ai_partners", methods=["POST"])
+def add_ai_partner():
+    try:
+        data = request.get_json()
+        db = get_connection()
+        cursor = db.cursor()
+        query = "INSERT INTO Partners (category, store_name, benefit, location) VALUES (%s, %s, %s, %s)"
+        cursor.execute(query, (data["category"], data["store_name"], data["benefit"], data["location"]))
+        db.commit()
+        return jsonify(success=True)
+    except Exception as e:
+        return jsonify(success=False, message=str(e))
+
+@app.route("/add_chong_partners", methods=["POST"])
+def add_chong_partner():
+    try:
+        data = request.get_json()
+        db = get_chong_connection()
+        cursor = db.cursor()
+        query = "INSERT INTO allianceTable (category, store_name, benefit, location) VALUES (%s, %s, %s, %s)"
+        cursor.execute(query, (data["category"], data["store_name"], data["benefit"], data["location"]))
+        db.commit()
+        return jsonify(success=True)
+    except Exception as e:
+        return jsonify(success=False, message=str(e))
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)

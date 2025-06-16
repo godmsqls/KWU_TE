@@ -49,32 +49,6 @@
   background-color: #a03030;
 }
 
-/* 검색창 */
-.searchWrap {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin: 20px 0;
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
-  width: 500px;
-}
-
-.searchIcon {
-  color: #a71919;
-  width: 25px; height: 25px;
-}
-
-.searchInput {
-  border: none;
-  outline: none;
-  background: none;
-  padding-left: 10px;
-  font-weight: 400;
-  font-size: 20px;
-  width: 100%;
-}
-
 /* 버튼 스타일 */
 .btWrap {
   display: flex;
