@@ -1,66 +1,68 @@
-/* 검색창 래퍼 */
+/* SearchComponent.css */
+.search-container {
+  position: relative;
+  width: 500px;
+  margin: 20px auto;
+}
+
 .searchWrap {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin: 20px 0;
-  border-bottom: 1px solid gray;
   padding-bottom: 10px;
-  width: 500px;
 }
 
-/* 검색 아이콘 */
 .searchIcon {
   color: #a71919;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
-/* 검색 입력창 */
 .searchInput {
   border: none;
   outline: none;
-  background: none;
-  padding-left: 10px;
-  font-weight: 400;
-  font-size: 20px;
-  width: 100%;
+  background: transparent;
+  font-size: 18px;
+  flex: 1;
+  padding-left: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
 }
 
-/* 검색 결과 리스트 */
 .searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   list-style: none;
   padding: 0;
   margin-top: 8px;
-  width: 500px;
-  background-color: #fff;
+  background: #ebebeb;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: none;
   max-height: 250px;
   overflow-y: auto;
-  position: absolute;
-  z-index: 1000;
+  z-index: 999;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 각 검색 항목 */
-.searchItem {
-  padding: 12px 16px;
+.searchResults li {
+  padding: 10px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee;
-  transition: background-color 0.2s ease;
+  font-size: 15px;
 }
 
-.searchItem:hover {
-  background-color: #f9f9f9;
+.searchResults li:hover {
+  background-color: #d6d6d6;
 }
 
-/* 제휴 그룹 정보 */
-.groupTag {
-  font-size: 0.85rem;
-  color: #999;
+.resultName {
   font-weight: 500;
+}
+
+.resultGroup {
+  color: #888;
+  font-size: 14px;
 }
