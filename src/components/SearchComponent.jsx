@@ -16,8 +16,8 @@ export default function SearchComponent() {
         return;
       }
       try {
-        const aiRes = await fetch("http://192.168.35.201:5000/ai_partners");
-        const chongRes = await fetch("http://192.168.35.201:5000/chong_partners");
+        const aiRes = await fetch("http://172.29.24.221:5050/ai_partners");
+        const chongRes = await fetch("http://172.29.24.221:5050/chong_partners");
 
         const aiData = await aiRes.json();
         const chongData = await chongRes.json();

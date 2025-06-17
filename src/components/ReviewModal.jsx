@@ -29,7 +29,7 @@ export default function ReviewModal({ onClose, storeName, category, onReviewAdde
         }
 
         try {
-            const baseUrl = "http://192.168.35.201:5000";  // IP는 실제 서버 주소로 교체
+            const baseUrl = "http://172.29.24.221:5050"; 
             const endpoint = isChong ? "/chong_reviews" : "/ai_reviews";
 
             

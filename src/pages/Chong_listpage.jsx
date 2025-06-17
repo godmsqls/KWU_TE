@@ -7,7 +7,7 @@ function Chong_listpage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://192.168.35.201:5000/chong_partners")
+    fetch("http://172.20.10.12:5050/chong_partners")
       .then(res => res.json())
       .then(data => setPartners(data));
   }, []);

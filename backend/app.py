@@ -194,5 +194,14 @@ def add_chong_partner():
         return jsonify(success=False, message=str(e))
 
 
+# 추천 가게 관련 DB 연결
+def get_recommend_connection():
+    return mysql.connector.connect(
+        host="172.29.26.55",
+        user="KWU_TE",
+        password="ilovekwu",
+        database="recommend_db"
+    )
+
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5050, debug=True)

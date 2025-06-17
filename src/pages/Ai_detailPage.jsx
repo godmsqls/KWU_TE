@@ -12,7 +12,7 @@ function Ai_detailPage() {
 
   const fetchStoreData = async () => {
     try {
-      const response = await fetch("http://192.168.35.201:5000/ai_partners");
+      const response = await fetch("http://172.20.10.12:5050/ai_partners");
       const data = await response.json();
       const found = data.find(item => item.store_name === storeName);
       setStore(found);
@@ -23,7 +23,7 @@ function Ai_detailPage() {
 
   const fetchReviewData = async () => {
     try {
-      const response = await fetch(`http://192.168.35.201:5000/ai_reviews/${encodeURIComponent(storeName)}`);
+      const response = await fetch(`http://172.20.10.12:5050/ai_reviews/${encodeURIComponent(storeName)}`);
       const data = await response.json();
       setReviewData(data);
     } catch (error) {

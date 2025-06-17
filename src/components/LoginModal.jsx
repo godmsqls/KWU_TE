@@ -48,7 +48,7 @@ export default function LoginModal({onClose}){
                     </div>
 
                     <div className="login_button_wrapper">
-                        <button className="login_button_inmodal" type="submit" onClick={handleLogin}>로그인</button>
+                        <button className="login_button_inmodal" type="submit" onClick={(e) => handleLogin(e)}>로그인</button>
                     </div>
                 </form>
                 
